@@ -1,0 +1,163 @@
+﻿
+.index {
+    margin-top: 2%;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    border: none;
+}
+
+.headerbg {
+    overflow: hidden;
+    background-color: #1a8cff;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.Shortdescription {
+    color: white;
+    margin-top: 35px;
+    float: right;
+    margin-right: 15px;
+    width: 650px;
+    background-color: blueviolet;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.downloadcv {
+    margin-top: 60px;
+    transform: translate(-50%, -50%);
+    border-bottom-color: white;
+    background-color: transparent;
+    height: 60px;
+    width: 200px;
+    font-size: 25px;
+    float: left;
+    margin-left: 100px;
+    background-color: blueviolet;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 25px;
+    display: block; /* remove extra space below image */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.circle {
+    border-radius: 50%;
+    max-height: 400px;
+    max-width: 400px;
+    align-content: center;
+    margin-left: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.small--img {
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contentDescription {
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+    font-size: 0;
+}
+
+    .contentDescription .textdiv {
+        visibility: hidden;
+    }
+
+    .contentDescription:hover {
+        display: flex;
+        text-align: center;
+        background-color: violet;
+        border-radius: 25px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        height: auto;
+        width: auto;
+        font-size: 15px;
+    }
+
+        .contentDescription:hover .textdiv {
+            visibility: visible;
+        }
+
+        .firstNav{
+            margin-top:35%;
+            background-color:white;
+            width:100%;
+        }
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .Shortdescription {
+        width: 500px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .Shortdescription {
+        width: 500px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (max-width: 450px) {
+    .Shortdescription {
+        width: 400px;
+        margin-bottom: 10px;
+    }
+    .firstNav{
+            margin-top:50%;
+            background-color:white;
+            width:100%;
+        }
+}
+    @media only screen and (min-width: 400px) {
+        .Shortdescription {
+            width: 400px;
+            margin-bottom: 10px;
+        }
+
+        .firstNav{
+            margin-top:50%;
+            background-color:white;
+            width:100%;
+        }
+    }

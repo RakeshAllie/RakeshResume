@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Rakesh_Resume</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link href="~/Content/custombootstrap.css" rel="stylesheet" />
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse sticky" style="top:0px;">
+        <div class="container-fluid headerbg">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="value collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a class="navbar-brand" href="#" style="margin-left:140px;color:white;font-size:20px">Rakesh</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" style="color:white;">Home</a></li>
+                    <li><a href="#" style="color:white;">What I Do</a></li>
+                    <li><a href="#" style="color:white;">About</a></li>
+                    <li><a href="#" style="color:white;">Works</a></li>
+                    <li><a href="#" style="color:white;">Experience</a></li>
+                    <li><a href="#" style="margin-right:140px;color:white;">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+    <div class="container" style="width:100%;margin-top:40px;position:fixed">
+        <img src="~/Images/WallPaper.jpg" style="width:100%;" />
+        @*<div class="text-block">
+            <h3>Hai,I am Rakesh</h3>
+            <h3>.NET developer, Skilled in ASP.NET MVC and WPF MVVM</h3>
+            <p>I Love to create attractive user friendly Application</p>
+        </div>
+        <button class="downloadcv">Download CV</button>*@
+    </div>
+
+    <div style="z-index:1;">
+        @RenderBody()
+        <hr />
+        @*<footer style="z-index:1;margin-bottom:0">
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>*@
+    </div>
+</body>
+</html>
