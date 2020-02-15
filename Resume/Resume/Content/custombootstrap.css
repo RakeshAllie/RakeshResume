@@ -90,12 +90,13 @@ img {
     .contentDescription:hover {
         display: flex;
         text-align: center;
-        background-color: violet;
+        /*background-color: violet;*/
         border-radius: 25px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
         height: auto;
         width: auto;
         font-size: 15px;
+        margin-bottom:0;
     }
 
         .contentDescription:hover .textdiv {
@@ -108,22 +109,107 @@ img {
             width:100%;
         }
 
+        .companyDetails{
+            display: flex;
+            align-content:center;
+            justify-content: center;
+            box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius:25px;
+            margin-bottom:10px;
+            margin-top:5px
+        }
 
+        .contactDetails{
+            display: flex;
+            align-content:center;
+            background-color:white;
+            box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius:25px;
+            margin-bottom:10px;
+            margin-top:5px
+        }
+
+@media only screen and (max-width: 450px) {
+    .Shortdescription {
+        width: 400px;
+        margin-bottom: 10px;
+    }
+    .firstNav{
+            margin-top:50%;
+            background-color:white;
+            width:100%;
+        }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .Shortdescription {
+        width: 550px;
+    }
+}
 
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .Shortdescription {
-        width: 500px;
+        width: 450px;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 500px) {
     .Shortdescription {
-        width: 500px;
+        width: 400px;
         margin-bottom: 10px;
     }
+
+    .firstNav{
+            margin-top:40%;
+            background-color:white;
+            width:100%;
+        }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .Shortdescription {
+        width: 330px;
+        margin-bottom: 10px;
+    }
+
+    .firstNav{
+            margin-top:60%;
+            background-color:white;
+            width:100%;
+        }
+     .contactDetails{
+            display: flex;
+            background-color:transparent;
+            color:white;
+            border-radius:25px;
+            margin-bottom:10px;
+            margin-top:5px;
+            box-shadow:none;
+        }
+
+
+      .companyDetails{
+            display: flex;
+            align-content:center;
+            justify-content: center;
+            box-shadow:none;
+            border-radius:25px;
+            margin-bottom:10px;
+            margin-top:5px
+        }
+
+      .circle {
+    border-radius: 50%;
+    max-height: 400px;
+    max-width: 400px;
+    margin-left: -30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -138,26 +224,41 @@ img {
 @media only screen and (min-width: 1200px) {
 }
 
-@media only screen and (max-width: 450px) {
-    .Shortdescription {
-        width: 400px;
-        margin-bottom: 10px;
-    }
-    .firstNav{
-            margin-top:50%;
-            background-color:white;
-            width:100%;
-        }
-}
-    @media only screen and (min-width: 400px) {
-        .Shortdescription {
-            width: 400px;
-            margin-bottom: 10px;
-        }
 
-        .firstNav{
-            margin-top:50%;
-            background-color:white;
-            width:100%;
-        }
-    }
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+/*.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}*/
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.1;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: brown;
+}

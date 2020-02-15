@@ -2,11 +2,19 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<style>
+    img:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+    .form-control:hover{
+        transform: scale(1.05);
+    }
+</style>
 <h2 class="index">Index</h2>
 
 <div class="container" style="width:100%;">
     <button class="downloadcv">Download CV</button>
+
 </div>
 
 <div class="" style="position: relative;text-align: center;">
@@ -24,20 +32,20 @@
             <h3>Please have one flash across my outline </h3>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" id="whatido">
         <div style="font-size:40px;text-align:center;padding:50px">
             <p>WHAT I <span class="text-primary" style="text-shadow:10px">DO</span></p>
             <h3>Please take a look on my profile </h3>
         </div>
 
         <div class="row" style="width:100%;margin-bottom:10px">
-            <div class="col-md-6"> 
+            <div class="col-md-6">
                 <img src="~/Images/ProgramingImage.jpg" style="text-align:center" />
             </div>
             <div class="col-md-6">
                 <div class="row" style="margin-top:20px">
                     <div class="column contentDescription">
-                        <img src="~/Images/Web developer.jpg" class="small--img" style="margin-top:0" />
+                        <img src="~/Images/Web developer.jpg" class="small--img" style="margin-top:0;" />
                         <div class="textdiv">
                             <h4>WEB APPLICATIONS</h4>
                             <p>Develeop web Applications with both front-end and back-end Connections</p>
@@ -67,7 +75,7 @@
 
     </div>
 
-    <div class="container-fluid headerbg" style="padding:40px">
+    <div class="container-fluid headerbg" style="padding:40px" id="about">
         <div style="text-align:center;padding:40px">
             <p style="font-size:30px">WHO AM I</p>
             <h4>A software developer with .Net Framework</h4>
@@ -90,7 +98,7 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="mywork">
         <div style="font-size:40px;text-align:center;padding:50px">
             <p>MY WORKS</p>
             <h4>Take a look on my works </h4>
@@ -98,16 +106,16 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid headerbg" id="myexperience">
         <div style="font-size:40px;text-align:center;padding:10px">
             <p>MY EXPERIENCE</p>
             <h4>Take a look on my Experience</h4>
             <hr />
         </div>
 
-        <div style="display: flex;align-content:center;justify-content: center;box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius:25px;margin-bottom:10px;margin-top:5px">
+        <div class="companyDetails">
             <img src="~/Images/globussoft-squarelogo.png" class="small--img" style="margin-top:0" />
-            <div style="text-align:center">
+            <div style="text-align:center;">
                 <h4>Globussoft Technology</h4>
                 <p>Develeop web Applications with both front-end and back-end Connections</p>
             </div>
@@ -116,15 +124,75 @@
         </div>
     </div>
 
-    <div class="container-fluid" style="background-color:blueviolet;justify-content:center;margin-bottom:0;">
+
+
+    <div class="container-fluid" id="myblogs">
+        <div style="font-size:40px;text-align:center;padding:50px">
+            <p>My Blogs</p>
+            <hr />
+        </div>
+
+        <div class="col-md-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius:25px;margin:15px">
+            <div class="container">
+                <img src="~/Images/Blogs/AwardLogo.jpg" alt="Avatar" class="image" style="height:200px;" />
+                <div class="middle">
+                    <div class="text">The moment when the entire Globussoft Thanked my commitment and compensated by Best Employee of Quarter</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius:25px;margin:15px">
+            <div class="container">
+                <img src="~/Images/Blogs/DiwaliImage.jpg" alt="Avatar" class="image" style="height:200px;width:500px" />
+                <div class="middle">
+                    <div class="text"> The moment the whole team together for the Diwali festival.</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius:25px;margin:15px">
+            <div class="container">
+                <img src="~/Images/Blogs/HolyImage.jpg" alt="Avatar" class="image" style="height:200px;width:500px" />
+                <div class="middle">
+                    <div class="text"> The moment the Holy festival.</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius:25px;margin:15px">
+            <div class="container">
+                <img src="~/Images/Blogs/ChristmasImage.jpg" alt="Avatar" class="image" style="height:200px;" />
+                <div class="middle">
+                    <div class="text">The moment Celebrating Chrismas</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius:25px;margin:15px">
+            <div class="container">
+                <img src="~/Images/Blogs/birthdayImage.jpg" alt="Avatar" class="image" style="height:200px;width:500px" />
+                <div class="middle">
+                    <div class="text"> BirthDay Moment </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius:25px;margin:15px">
+            <div class="container">
+                <img src="~/Images/Blogs/PartyImage.jpg" alt="Avatar" class="image" style="height:200px;width:500px" />
+                <div class="middle">
+                    <div class="text"> The Party Moment</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid" style="background-color:blueviolet;justify-content:center;margin-bottom:0;" id="contact">
         <div style="font-size:40px;text-align:center;padding:50px">
             <p>KEEP IN TOUCH WITH ME</p>
             <hr />
         </div>
 
         <div class="row" style="width:100%;margin-bottom:10px">
-            <div class="col-md-6" >
-                <div style="display: flex;align-content:center;background-color:white;box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius:25px;margin-bottom:10px;margin-top:5px">
+            <div class="col-md-6">
+                <div class="contactDetails">
                     <img src="~/Images/LocationSymbol.png" class="small--img" style="margin-top:0;" />
                     <div style="text-align:center;justify-content: center;">
                         <h4>MEET AT</h4>
@@ -135,7 +203,7 @@
                     </div>
                 </div>
 
-                <div style="display: flex;align-content:center;background-color:white; box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius:25px;margin-bottom:10px;margin-top:5px">
+                <div class="contactDetails">
                     <img src="~/Images/PhoneSymbol.jpg" class="small--img" style="margin-top:0;" />
                     <div style="text-align:center;justify-content: center;">
                         <h4>CONTACT ME AT</h4>
@@ -145,7 +213,7 @@
                     </div>
                 </div>
 
-                <div style="display: flex;align-content:center;background-color:white;box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius:25px;margin-bottom:10px;margin-top:5px">
+                <div class="contactDetails">
                     <img src="~/Images/MailSymbol.jpg" class="small--img" style="margin-top:0;" />
                     <div style="text-align:center;justify-content: center;">
                         <h4>DROP QUERY AT</h4>
@@ -160,7 +228,7 @@
                 <div class="form-group">
                     <input class="form-control" id="ex1" type="text" placeholder="Name*" style="padding:25px;margin-top:5px;border-radius:20px">
                 </div>
-                
+
                 <div class="form-group">
                     <input class="form-control" id="ex2" type="email" placeholder="Email*" style="padding:25px;margin-top:5px;border-radius:20px">
                 </div>

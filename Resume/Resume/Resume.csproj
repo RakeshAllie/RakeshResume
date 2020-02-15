@@ -118,12 +118,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\custombootstrap.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Images\Automation_Tools.jpg" />
-    <Content Include="Images\AwardImage.jpg" />
-    <Content Include="Images\AwardLogo.jpg" />
+    <Content Include="Images\Blogs\AwardImage.jpg" />
+    <Content Include="Images\Blogs\AwardLogo.jpg" />
+    <Content Include="Images\Blogs\HolyImage.jpg" />
+    <Content Include="Images\Blogs\birthdayImage.jpg" />
+    <Content Include="Images\Blogs\PartyImage.jpg" />
+    <Content Include="Images\Blogs\ChristmasImage.jpg" />
     <Content Include="Images\globussoft-squarelogo.png" />
+    <Content Include="Images\Blogs\DiwaliImage.jpg" />
     <Content Include="Images\MailSymbol.jpg" />
     <Content Include="Images\PhoneSymbol.jpg" />
     <Content Include="Images\RakeshImage.jpg" />
